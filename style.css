@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  color: #00ffcc;
+  background: black;
+  overflow: hidden;
+}
+
+canvas#matrix {
+  position: fixed;
+  top: 0;
+left: 0;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 1em auto;
+  width: 80%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  color: black;
+  background: #00ffcc;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: #00ffaa;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.testimonials {
+  margin-top: 5em;
+}
+
+.contact-links p a {
+  color: #00ffcc;
+  text-decoration: underline;
+}
+.contact-links p a:hover {
+  color: #00ffaa;
+}
