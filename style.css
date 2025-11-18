@@ -4,79 +4,29 @@ body, html {
   font-family: 'Courier New', monospace;
   color: #00ffcc;
   background: black;
-  overflow: auto;
+  overflow-y: auto;
 }
 
-canvas#matrix {
-  position: fixed;
-  top: 0;
-left: 0;
-  z-index: 0;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding-top: 15vh;
-}
-
-h1 {
-  font-size: 3em;
-  text-shadow: 0 0 10px #00ffcc;
-}
-
-p {
-  font-size: 1.2em;
-  margin: 1em auto;
-  width: 80%;
-}
-
+/* Espace sous les boutons */
 .btn {
-  display: inline-block;
-  padding: 12px 30px;
-  color: black;
-  background: #00ffcc;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-.btn:hover {
-  background: #00ffaa;
-  box-shadow: 0 0 10px #00ffcc;
+  margin-bottom: 20px;
 }
 
-.testimonials {
-  margin-top: 5em;
-}
-
-.contact-links p a {
-  color: #00ffcc;
-  text-decoration: underline;
-}
-.contact-links p a:hover {
-  color: #00ffaa;
-}
-.testimonials {
-  margin: 4em auto;
-  max-width: 600px;
-  text-align: left;
-  font-style: italic;
-}
-
-.testimonial-item {
+/* Témoignages */
+.testimonials .testimonial-item {
   background: rgba(0, 255, 204, 0.1);
-  border-left: 4px solid #00ffcc;
-  padding: 1em;
-  margin-bottom: 1.5em;
-  border-radius: 5px;
+  padding: 15px 20px;
+  margin: 15px auto;
+  border-radius: 8px;
+  max-width: 600px;
+  font-size: 1.1em;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: default;
 }
 
-.testimonial-item span {
-  display: block;
-  margin-top: 0.5em;
-  font-weight: bold;
-  font-style: normal;
-  color: #00ffaa;
+/* Effet hover sur témoignages */
+.testimonials .testimonial-item:hover {
+  background: rgba(0, 255, 204, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00ffcc;
 }
