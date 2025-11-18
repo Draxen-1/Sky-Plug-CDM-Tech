@@ -16,7 +16,7 @@ left: 0;
 
 .container {
   position: relative;
-  z-index: -100;
+  z-index: 1;
   text-align: center;
   padding-top: 15vh;
 }
