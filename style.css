@@ -4,7 +4,7 @@ body, html {
   font-family: 'Courier New', monospace;
   color: #00ffcc;
   background: black;
-  overflow: hidden;
+  overflow: auto;
 }
 
 canvas#matrix {
